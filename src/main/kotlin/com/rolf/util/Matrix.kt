@@ -9,6 +9,7 @@ open class Matrix<T>(internal val input: MutableList<MutableList<T>>) {
     fun topRight() = Point(width() - 1, 0)
     fun bottomLeft() = Point(0, height() - 1)
     fun bottomRight() = Point(width() - 1, height() - 1)
+    fun center() = Point(width() / 2, height() / 2)
 
     fun allElements(): List<T> {
         return input.flatten()
